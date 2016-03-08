@@ -3,7 +3,7 @@ Betas Login
 
 CPPS Beta Login - Pages Login
 
-![](http://i.imgur.com/Ku126Wll.jpg)
+![](http://imgur.com/s5B76qc.png)
 
 ### Requirements:
 <ul>
@@ -12,15 +12,15 @@ CPPS Beta Login - Pages Login
 
 ### Instructions:
 <ul>
-  <li>Go To Your Register and add:
-  <?php
+  <li>Go To Your Register and add:<br>
+  < ?php
 $codes = explode("\n", file_get_contents("codes.inc") );
 if( ! isset($_GET['c']) || ! in_array($_GET['c'], $codes ) )
 exit("You Dont have a beta code now! buy one or win!");
 ?>
   </li>
 <li>
-Find your $insert = "INSERT INTO users of your register and add:
+Find your $insert = "INSERT INTO users of your register and add:<br>
 $newc = array();
 foreach($codes as $a => $b ) {
 if( $b == $_GET['c'] ) continue;
