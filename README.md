@@ -13,8 +13,8 @@ CPPS Beta Login - Pages Login
 ### Instructions:
 <ul>
   <li>Go To Your Register.php and add this functions <a href="http://pastebin.com/fWcZ4KwW">Click Here</a><br>
-
-Edit YOURSERVERLINK - YOURSERVERNAME.
+<li>
+On Index.php edit: YOURSERVERNAME and YOURSERVERLINK
 </li>
 </ul>
 
