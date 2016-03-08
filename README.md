@@ -12,24 +12,8 @@ CPPS Beta Login - Pages Login
 
 ### Instructions:
 <ul>
-  <li>Go To Your Register and add:<br>
-  < ?php
-$codes = explode("\n", file_get_contents("codes.inc") );
-if( ! isset($_GET['c']) || ! in_array($_GET['c'], $codes ) )
-exit("You Dont have a beta code now! buy one or win!");
-?>
-  </li>
-<li>
-Find your $insert = "INSERT INTO users of your register and add:<br>
-$newc = array();
-foreach($codes as $a => $b ) {
-if( $b == $_GET['c'] ) continue;
-$newc[] = $b;
-}
-$codes = implode("\n", $newc);
-file_put_contents("codes.inc", $codes);
-</li>
-<li>
+  <li>Go To Your Register.php and add this functions <a href="http://pastebin.com/fWcZ4KwW">Click Here</a><br>
+
 Edit YOURSERVERLINK - YOURSERVERNAME.
 </li>
 </ul>
